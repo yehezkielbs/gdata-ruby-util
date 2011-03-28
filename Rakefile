@@ -36,13 +36,13 @@ end
 
 spec = Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
-  s.author = 'Jeff Fisher'
-  s.email = 'jfisher@youtube.com'
+  s.author = 'Jeff Fisher, Trevor Johns'
+  s.email = 'trevorjohns@google.com'
   s.homepage = 'http://code.google.com/p/gdata-ruby-util'
   s.summary = "Google Data APIs Ruby Utility Library"
   s.rubyforge_project = 'gdata'
   s.name = 'gdata'
-  s.version = '1.1.1'
+  s.version = '1.1.2'
   s.requirements << 'none'
   s.require_path = 'lib'
   s.test_files = FileList['test/ts_gdata.rb']
