@@ -31,6 +31,13 @@ module GData
         @parts = [entry, file, closing_boundary]
         @current_part = 0
       end
+
+      # Reset the stream so that it can be read again
+      def rewind
+        @current_part = 0
+        @parts.map { |p| p.rewind }
+      end
+
       
       # Implement read so that this class can be treated as a stream.
       def read(bytes_requested)
@@ -76,7 +83,11 @@ module GData
         @string = source_string
         @bytes_read = 0
       end
-      
+
+      def rewind
+        @bytes_read = 0
+      end
+
       # Implement read so that this class can be treated as a stream.
       def read(bytes_requested)
         if @bytes_read == @string.length

@@ -36,12 +36,12 @@ end
 
 spec = Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
-  s.author = 'Jeff Fisher, Trevor Johns'
+  s.author = 'Jeff Fisher, Trevor Johns, JKarlsson'
   s.email = 'trevorjohns@google.com'
-  s.homepage = 'http://code.google.com/p/gdata-ruby-util'
+  s.homepage = 'https://github.com/yehezkielbs/gdata-ruby-util'
   s.summary = "Google Data APIs Ruby Utility Library"
   s.rubyforge_project = 'gdata'
-  s.name = 'gdata'
+  s.name = 'yehezkielbs-gdata'
   s.version = '1.1.2'
   s.requirements << 'none'
   s.require_path = 'lib'
@@ -54,7 +54,7 @@ spec = Gem::Specification.new do |s|
   end
   s.description = <<EOF
 This gem provides a set of wrappers designed to make it easy to work with 
-the Google Data APIs.
+the Google Data APIs. This fork enables OAuth authentication
 EOF
 end
 

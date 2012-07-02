@@ -177,6 +177,11 @@ module GData
           raise Error, "An AuthSub token must be set first."
         end
       end
+
+      # Sets OAuth info to use
+      def oauth_info=(options)
+        self.auth_handler = GData::Auth::OAuth.new(options)
+      end
     end
   end
 end
